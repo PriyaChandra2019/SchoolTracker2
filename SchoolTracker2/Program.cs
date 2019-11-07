@@ -1,3 +1,4 @@
+using SchoolTracker2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace SchoolTracker1
 
         static void Main(string[] args)
         {
+            PayRoll payRoll = new PayRoll();
+            payRoll.PayAll();
 
             var adding = true;
 
@@ -102,7 +105,7 @@ namespace SchoolTracker1
             }
         }
 
-        class Member
+        public class Member
         {
             public string Name;
             public string Address;
@@ -145,11 +148,7 @@ namespace SchoolTracker1
 
         }
 
-        class Teacher : Member
-        {
-
-            public string Subject;
-        }
+        
     }
 }
 
